@@ -52,7 +52,7 @@ if __name__ == '__main__':
                 send_to_server(mess)
 
             elif inp == '4':
-                data['type'] = 'insert_data'
+                data['type'] = 'update_data'
                 data['id'] = int(input("Enter id: "))
                 data['name'] = input("Enter name: ")
                 data['tel'] = input("Enter tel.: ")

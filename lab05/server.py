@@ -36,7 +36,7 @@ def insert_data(data: dict):
     con.commit()
     return 'row inserted'
 
-def insert_data(data: dict):
+def update_data(data: dict):
     global con
 
     cur = con.cursor()
@@ -73,6 +73,7 @@ functions = {
     'create_database': create_database,
     'query_database': query_database,
     'insert_data': insert_data,
+    'update_data': update_data,
     'delete_data': delete_data,
     'delete_database': delete_database
 }
